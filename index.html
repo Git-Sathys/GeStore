@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="Content-Language" content="fr">
+    <meta name="Language" content="fr">
+    <meta name="Author">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/popup.css" async />
+  <script src="js/popup.js" async></script>
+  </head>
+  <body>
+    <div class="menuprincipale">
+      <div class="recherche_p">
+        <form id="recherche">
+        <input type="search" placeholder="Search">
+      </form>
+      </div>
+      </div>
+      <div class="stickymain">
+        <div class="sticky">
+          <div class="logo">
+            <a href="#"> <img src="images/Logo.png" alt="logo" width="60px" height="50px"> </a>
+          </div>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li class="navi"><a href="index.html">Accueil</a></li>
+                <li class="navi"><a href="boutique.html">Boutique</a></li>
+                <li class="navi"><a href="contact.html">Contactez Nous</a></li>
+                <li class="navi"><a href="connexion.html">Connexion</a></li>
+                <li class="navi"><a href="panier.html">Panier</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images\image meilleurs ventes\devil-may-cry-5-cover.jpg"class="defilement1">
+        <p>"DEVIL MAY CRY 5 NOUS EMMÈNE AU PARADIS DANS UN TRAIN D'ENFER"</p>
+          <img src="images\image defilante\thumb-350-948585.png" class="backgrounddefilement1" >
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/image meilleurs ventes\red-dead-redemption-2-special-edition-cover.jpg" class="defilement2">
+        <p>"RED DEAD REDEMPTION 2 : LA CHEVAUCHEE FANTASTIQUE"</p>
+           <img src="images\image defilante\rdr2.jpg" class="backgrounddefilement1" >
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images\image meilleurs ventes\Borderlands 3.jpg"class="defilement3">
+        <p>"BORDERLANDS 3 NE BOULEVERSE PAS LA RECETTE DU GRAND MÉCHANT LOOT, ET C'EST TANT MIEUX"</p>
+    <img src="images\image defilante\borderland3.jpg" class="backgrounddefilement1" >
+      </div>
+      <div class="mySlides fade">
+        <img src="images\image meilleurs ventes\need-for-speed-heat-cover.jpg"class="defilement4">
+        <p>"NEED FOR SPEED HEAT EST ARRIVE POUR RECHAUFFER VOS NUITS"</p>
+    <img src="images\image defilante\need for speed heat.jpg" class="backgrounddefilement1" >
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change d'image tous les 3 seconds
+      }
+      </script>
+
+<main>
+  <h1>meilleurs ventes</h1>
+  <div class="vente">
+ <div id="menu">
+   <div class="clientmenu">
+   <h1>avis clients</h1>
+       <h2>PaRaDIIzE</h2>
+       <div class="client">
+       <img src="images/image client\client1.jpg" class="clientimage">
+       </div>
+       <h3>21 nov. 08:59</h3>
+          <p>jamais déçu, rapide</p>
+          </div>
+          <div class="clientmenu">
+       <h2>LeoZ</h2>
+       <div class="client">
+       <img src="images/image client\client2.jpg" class="clientimage">
+       </div>
+       <h3> 14 oct. 21:56</h3>
+         <p>Super, code fonctionnelle et reçu rapidement, prix très compétitif</p>
+         </div>
+         <div class="clientmenu">
+       <h2>Eldromedario37</h2>
+       <div class="client">
+       <img src="images/image client\client3.jpg" class="clientimage">
+       </div>
+       <h3> 14 juin 19:25</h3>
+         <p>Le tarif affiché ne correspond pas au tarif payé.
+         Sinon toujours aussi rapide</p>
+         </div>
+     </div>
+     </div>
+
+
+
+
+ <div id="menu2">
+  <h1>liens test jeux </h1>
+  <div class="lienstestjeux">
+  <iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/vx1a2yKBGUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/oz5XPaDNzZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/hjPscWYMKfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/KbxY2HyKcBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/lWGSgKb5244" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="testeur" width="260" height="126" src="https://www.youtube.com/embed/MzmEuFSJcY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+</div>
+<div class="jeuxactu">
+  <div class=ventejeu>
+<a href="needforspeedheat.html"> <img class="bestvente"src="images\image meilleurs ventes\need-for-speed-heat-cover.jpg" ></a>
+<div class="acheter">
+<a href="needforspeedheat.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+  <div class=ventejeu>
+<a href="battlefield1.html"> <img class="bestvente"src="images\image meilleurs ventes\battlefield-1-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="battlefield1.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="fifa20.html"> <img class="bestvente"src="images\image meilleurs ventes\Fifa 20.jpg" alt=""></a>
+<div class="acheter">
+<a href="fifa20.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<h1>ventes récentes</h1>
+<div class=ventejeu>
+<a href="reddeadredemption2.html"> <img class="venteactu"src="images/image meilleurs ventes\red-dead-redemption-2-special-edition-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="reddeadredemption2.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="ark.html"> <img class="venteactu"src="images\image meilleurs ventes\ark-survival-evolved-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="ark.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="overwatch.html"> <img class="venteactu"src="images\image meilleurs ventes\overwatch-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="overwatch.html"> <button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="diablo3.html"> <img class="venteactu"src="images\image meilleurs ventes\diablo-iii-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="diablo3.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="supersmashbros.html"> <img class="venteactu"src="images\image meilleurs ventes\super-smash-bros-ultimate-switch-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="supersmashbros.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="gta5.html"> <img class="venteactu"src="images\image meilleurs ventes\GTA 5.jpg" alt=""></a>
+<div class="acheter">
+<a href="gta5.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="monsterhunterworld.html"> <img class="venteactu"src="images\image meilleurs ventes\monster-hunter-world-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="monsterhunterworld.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="luigismansion3.html"> <img class="venteactu"src="images\image meilleurs ventes\luigis-mansion-3-switch-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="luigismansion3.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="pokemonbouclier.html"> <img class="venteactu"src="images\Jeux\PokemonBouclier\pokemon-bouclier-switch-cover.jpg" alt=""></a>
+<div class="acheter">
+<a href="pokemonbouclier.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+<div class=ventejeu>
+<a href="worldofwarcraft.html"> <img class="venteactu"src="images/image meilleurs ventes\world-of-warcraft.jpg" alt=""></a>
+<div class="acheter">
+  <a href="worldofwarcraft.html"><button class="button"><span>acheter</span></button></a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="containerPlareformeJeux">
+  <div class="PlateformeJeux">
+    <a href="Battlenet.html"> <li><img src="images/Plateformes/Battlenet.png" alt="Battlenet"> </li> </a>
+    <a class="plat" href="Battlenet.html"><li> Battle.net </li> </a>
+    <a href="Nitendo.html">  <li><img src="images/Plateformes/nitendo.png" alt="Nitendo"> </li> </a>
+    <a class="plat" href="Nitendo.html"><li> Nitendo </li> </a>
+    <a href="Origin.html">  <li><img src="images/Plateformes/Origin.png" alt="Origin"> </li> </a>
+    <a class="plat" href="Origin.html"><li> Origin </li> </a>
+    <a href="PS4.html">  <li><img src="images/Plateformes/Ps4.png" alt="PS4"> </li> </a>
+    <a class="plat" href="PS4.html"><li> Ps4 </li> </a>
+    <a href="Rokstar.html">  <li><img class="Rokstar" src="images/Plateformes/Rockstar.png" alt="Rokstar"> </li> </a>
+    <a class="plat" href="Rokstar.html"><li> Rokstar </li> </a>
+    <a href="Steam.html">  <li><img class="Steam" src="images/Plateformes/Steam.png" alt="Steam"> </li> </a>
+    <a class="plat" href="Steam.html"><li> Steam </li> </a>
+    <a href="Uplay.html">  <li><img class="Uplay" src="images/Plateformes/Uplay.png" alt="Uplay"> </li> </a>
+    <a class="plat" href="Uplay.html"><li> Uplay </li> </a>
+    <a href="Xbox.html">  <li><img class="Xbox" src="images/Plateformes/Xbox.png" alt="Xbox"> </li> </a>
+    <a class="plat" href="Xbox.html"><li> Xbox </li> </a>
+  </div>
+</div>
+<section >
+<a href="index.html">  <img class="nouveaujeu" src="images/4527.jpg" alt=""></a>
+
+</section>
+<section >
+  <div class="containerBoutique">
+    <div class="Boutique">
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/T-shirt 1.jpg" alt="T-shirts"></a>
+        <a href="boutique.html">T-shirts</a>
+      </div>
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/Sweat 1.jpg" alt="Sweats"></a>
+        <a href="boutique.html">Sweats</a>
+      </div>
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/Bonnet 1.jpg" alt="Bonnets"></a>
+        <a href="boutique.html">Bonnets</a>
+      </div>
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/Poster 1.jpg" alt="Poster"></a>
+        <a href="boutique.html">Posters</a>
+      </div>
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/Goodies 1.jpg" alt="Goodies"></a>
+        <a href="boutique.html">Goodies</a>
+      </div>
+      <div class="imgtxt">
+        <a href="boutique.html"><img src="images/Boutique/Autres 1.jpg" alt="Autres .."></a>
+        <a href="boutique.html">Autres</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="containerReseaux">
+    <div class="Reseaux">
+    <a href="Youtube.html"> <img src="images/Logos Réseaux/youtube.png" alt="Youtube"> </a>
+    <a href="Instagram.html"> <img src="images/Logos Réseaux/instagram.png" alt="Instagram"> </a>
+    <a href="Twitter.html"> <img src="images/Logos Réseaux/twitter.png" alt="Twitter"> </a>
+    <a href="Facebook.html"> <img src="images/Logos Réseaux/facebook.png" alt="Facebook"> </a>
+    <a href="Twitch.htlm"> <img src="images/Logos Réseaux/twitch.png" alt="Twitch"> </a>
+    </div>
+  </div>
+  <div class="">
+
+  </div>
+  <div class="copiright">
+    <p>Copiright © 2019-2019 - GeStore - France</p>
+  </div>
+</footer>
+  </body>
+</html>

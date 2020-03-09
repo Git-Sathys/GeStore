@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #444444;
+  font-family: Helvetica;
+}
+
+.stickymain {
+  : -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 50px;
+  top:0px;
+  z-index: 1;
+  background-color: #2d2d2d;
+}
+.sticky{
+  background-size:cover;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-content: center;
+}
+
+.navi{
+  display: inline;
+  list-style: none;
+}
+
+.menu nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: linear-gradient(pink, #444444, red);
+}
+
+.containerPlateformeJeux {
+  width: 200px;
+  height: 800px;
+  display: flex;
+  background-color: #2d2d2d;
+  float: left;
+  left: 0;
+}
+
+.PlateformeJeux li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+
+.plat {
+  margin: 0 40px 10px 10px;
+  text-decoration: none;
+  display: flex;
+}
+.PlateformeJeux div {
+  display: flex;
+}
+.plat p {
+  margin-top: 25px;
+}
+.plat li {
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.PlateformeJeux a li {
+  list-style: none;
+  margin: 10px 0 10px 10px;
+}
+.PlateformeJeux a {filter: brightness(100%);}
+.PlateformeJeux a:hover {filter: brightness(40%);}
+
+.txtMeilleursJeux {
+  text-align: center;
+  color: white;
+}
+
+.containerMeilleursJeux {
+  height: 1200px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background-color: #2d2d2d;
+}
+
+.MeilleursJeux {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.MeilleursJeux a {
+  display: flex;
+  margin: 20px;
+}
+
+.Jeux a {
+  width: 300px;
+  height: 450px;
+}
+.Jeux:hover { filter: drop-shadow(30px 30px 60px black) brightness(120%);}
+
+.Jeux2 a{
+  width: 180px;
+  height: 270px;
+}
+.Jeux2:hover { filter: drop-shadow(15px 15px 30px black) brightness(120%);}
+
+.imgtxt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imgtxt a {
+  text-decoration: none;
+  color: white;
+}
+
+.containerPropJeux {
+  width: 200px;
+  height: 600px;
+  display: flex;
+  background-color: #2d2d2d;
+  float: left;
+  left: 0;
+  margin-top: -350px;
+  margin-bottom: 50px;
+}
+
+.PropJeux {
+  width: 100%;
+  height: 100%;
+}
+
+.PropJeux li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+
+.plat {
+  margin: 0 40px 10px 10px;
+  text-decoration: none;
+  display: flex;
+}
+.PropJeux div {
+  display: flex;
+}
+.plat p {
+  margin-top: 25px;
+}
+.plat li {
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.PropJeux a li {
+  list-style: none;
+  margin: 10px 0 10px 10px;
+}
+.PropJeux a {filter: brightness(100%);}
+.PropJeux a:hover {filter: brightness(40%);}
+
+.containerBoutique {
+  display: flex;
+  width: 80%;
+  height: 200px;
+  margin: 100px auto;
+  background-color: #582020;
+  border-radius: 20px;
+}
+
+.Boutique {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Boutique a img{
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+}
+.Boutique a:hover {filter: drop-shadow(5px 5px 10px black); font-size: 150%; }
+
+
+
+footer {
+  height: 150px;
+  background-color: #2d2d2d;
+  color: white;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+.copiright p {
+  text-align: center;
+}
+
+.containerReseaux {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.Reseaux {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Reseaux a img{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.Reseaux a {
+  margin: 0 20px 0 20px;
+}
+
+.Reseaux a img:hover {filter: drop-shadow(5px 5px 10px black);}
