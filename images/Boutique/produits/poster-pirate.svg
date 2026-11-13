@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<rect width="400" height="400" fill="#5a5a5a"/>
+<rect x="92" y="42" width="232" height="324" fill="#000" opacity=".35"/>
+<rect x="84" y="34" width="232" height="324" fill="#111" stroke="#d9d0c4" stroke-width="8"/>
+<svg x="92" y="42" width="216" height="308" viewBox="0 0 216 308"><rect width="216" height="308" fill="#0d1b2a"/><rect y="215" width="216" height="93" fill="#1b3a5c"/><path d="M40 215 L176 215 L156 245 L60 245 Z" fill="#3b2a1a"/><path d="M108 215 L108 60" stroke="#3b2a1a" stroke-width="6"/><path d="M114 70 L176 190 L114 190 Z" fill="#d9d0c4"/><path d="M102 90 L52 190 L102 190 Z" fill="#d9d0c4"/><path d="M108 60 L146 68 L108 80 Z" fill="#111"/><text x="108" y="290" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="18" text-anchor="middle" fill="#d9d0c4">BLACK FLAG</text></svg>
+</svg>

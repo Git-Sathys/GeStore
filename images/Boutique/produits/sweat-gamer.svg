@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<rect width="400" height="400" fill="#cfcfcf"/>
+<path d="M150 95 L85 120 L35 300 L80 315 L110 215 L110 350 L290 350 L290 215 L320 315 L365 300 L315 120 L250 95 Z" fill="#8e2b2b" stroke="#4d1414" stroke-width="4" stroke-linejoin="round"/>
+<path d="M150 95 Q145 45 200 40 Q255 45 250 95 Q200 150 150 95 Z" fill="#8e2b2b" stroke="#4d1414" stroke-width="4" stroke-linejoin="round"/>
+<path d="M165 100 Q200 135 235 100" fill="none" stroke="#4d1414" stroke-width="6" stroke-linecap="round"/>
+<path d="M185 128 L182 180 M215 128 L218 180" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round"/>
+<path d="M150 285 L250 285 L262 335 L138 335 Z" fill="none" stroke="#4d1414" stroke-width="4" stroke-linejoin="round"/><text x="200" y="202" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#fff">EAT</text>
+<text x="200" y="221" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#fff">SLEEP</text>
+<text x="200" y="240" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#fff">GAME</text>
+<text x="200" y="259" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="15" text-anchor="middle" fill="#fff">REPEAT</text>
+</svg>

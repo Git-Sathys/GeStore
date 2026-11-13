@@ -1,450 +1,181 @@
+/* Page boutique.
+   Chaque rayon est une grille de cartes produit : plus aucun
+   positionnement absolu, la page s'adapte seule à la largeur. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   background-color: #444444;
+  font-family: Helvetica, Arial, sans-serif;
 }
-*{
-  font-family: Helvetica;
-}
-a{
+a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
+/* ---------- Menu ---------- */
 .stickymain {
-  : -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   width: 100%;
-  height: 50px;
-  top:0px;
-  z-index: 1;
+  min-height: 50px;
+  top: 0;
+  z-index: 3;
   background-color: #2d2d2d;
 }
-
-.sticky{
-  background-size:cover;
-  justify-content: space-between;
+.sticky {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
-
+.logo a, .logo img {
+  display: block;
+}
 .menu {
   display: flex;
   align-content: center;
 }
-
-.navi{
-  display: inline;
+.menu nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 8px 20px;
+}
+.navi {
   list-style: none;
 }
-
 .menu nav ul li a {
+  display: block;
   color: white;
-  text-decoration: none;
   padding: 10px;
-  margin-right: 20px;
   border-radius: 10px;
   background: linear-gradient(pink, #444444, red);
 }
 
-h1{
-  margin-left: 5%;
-  margin-top: 3%;
+/* ---------- Contenu ---------- */
+main {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #582020;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.categories a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.categories img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.categories a:hover {
+  filter: brightness(70%);
+}
+
+.rayon {
+  /* laisse la place du menu collant quand on arrive par une ancre */
+  scroll-margin-top: 70px;
+}
+.rayon h2 {
+  margin: 40px 0 15px;
   color: #fff;
   font-size: 30px;
-  text-decoration: none;
 }
 
-.tshirt-image img{
-  width: 16%;
-  margin-left: 5%;
+.produits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
 }
- img:hover{filter: brightness(50%);}
-
-.tshirt-basket img{
-  width: 1.3%;
-  position:relative;
-  left:15%;
-  bottom: 8%;
-}
-
-.tshirt-info {
-  font-size: 12px;
-  text-align: left;
-  padding:2px;
-  width:15.7%;
-  height:75px;
-  position: absolute;
-  bottom:49.8%;
-  left: 5%;
+.produit {
+  display: flex;
+  flex-direction: column;
   background-color: #D5D5D5;
-  line-height: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.produit:hover {
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 10px black;
+}
+.produit img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.produit-info {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+.produit-nom {
+  font-weight: bold;
+}
+.produit-prix {
+  color: #8f1d1d;
+  font-weight: bold;
 }
 
-
-.tshirt-info img{
-  position: absolute;
-  left: 85%;
-  width: 8%;
-  bottom: 73%;
+/* ---------- Pied de page ---------- */
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding-top: 10px;
+}
+.Reseaux {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 40px;
+}
+.Reseaux a img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.Reseaux a img:hover {
+  filter: drop-shadow(5px 5px 10px black);
+}
+.copiright p {
+  text-align: center;
+  margin: 10px 0 0;
+  padding-bottom: 15px;
 }
 
-.tshirt-image1 img{
-  width: 16%;
-  margin-left: 25%;
-  position: absolute;
-  top: 55px;
+/* ---------- Écrans plus étroits ---------- */
+@media (max-width: 900px) {
+  .produits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-.tee-info2{
-  position: relative;
-  left: 25%;
-  top: -16px;
-  font-size: 12px;
-  line-height: 25px;
-  padding: 2px;
-  width: 15.7%;
-  background-color:#D5D5D5;
-  height: 75px;
 }
-
-.tee-basket img{
-  width: 6%;
-
-  position: absolute;
-  right: 10px;
-  bottom: 60px;
-}
-
-.tee-3 img{
-  width: 16%;
-  margin-left: 45%;
-  position: absolute;
-  top: 55px;
-}
-
-.tee-info3{
-  position: relative;
-  left: 45%;
-  top: -95px;
-  font-size: 12px;
-  line-height: 25px;
-  padding: 2px;
-  width: 15.7%;
-  background-color:#D5D5D5;
-  height: 75px;
-}
-
-.tee-4 img{
-  width: 231px;
-  margin-left: 289px;
-  position: absolute;
-  top: -220px;;
-}
-
-.tee-info4 {
-  position: relative;
-  left: 289px;
-  top: -77px;
-  font-size: 12px;
-  padding: 2px;
-  line-height: 25px;
-  width: 227px;
-  background-color:#D5D5D5;
-  height: 75px;
-}
-
-main{
-  position: relative;
-  left: 101px;
-}
-
-
-h2{
-  margin-left: 5%;
-  margin-top: -3%;
-  color: #fff;
-  font-size: 30px;
-}
-
-.poster-1 img{
-  width: 231px;
-  margin-left: 5%;
-}
-.poster-info{
-  line-height: 25px;
-  position: absolute;
-  left: 5%;
-  bottom: -28px;
-  font-size: 12px;
-  padding: 2px;
-  background-color:#D5D5D5;
-  width: 15.75%;
-}
-
-.poster-2 img{
-  width: 231px;
-  margin-left: 25%;
-  position: absolute;
-  top: 66.5%;
-}
-.poster-info2{
-  line-height: 25px;
-  position : absolute;
-  left: 25%;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.1%;
-  bottom:-28px;
-}
-
-.poster-3 img{
-  width: 231px;
-  margin-left: 45%;
-  position: absolute;
-  top: 66.5%;
-}
-
-.poster-4 img{
-  width: 231px;
-  margin-left: 65%;
-  position: absolute;
-  top: 66.5%;
-}
-.poster-info3{
-  line-height: 25px;
-  position : absolute;
-  left: 45%;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-  bottom:-28px;
-}
-
-.poster-info4{
-  line-height: 25px;
-  position : absolute;
-  left: 65%;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-  bottom:-28px;
-}
-
-h3{
-  margin-left: 12%;
-  margin-top: 2%;
-  color: #fff;
-  font-size: 30px;
-}
-
-.sweat-1 img{
-  width:231px;
-  margin-left: 12%;
-}
-
-.sweat-info{
-  line-height: 25px;
-  position: absolute;
-  left: 12%;
-  bottom: -425px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.sweat-2 img{
-  width:231px;
-  margin-left: 32%;
-  position: absolute;
-  bottom: -356px;
-}
-.sweat-info2{
-  line-height: 25px;
-  position: absolute;
-  left: 32%;
-  bottom: -425px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.sweat-3 img{
-  width: 231px;
-  margin-left: 52.2%;
-  position: absolute;
-  bottom: -356px;
-}
-
-.sweat-info3{
-  line-height: 25px;
-  position: absolute;
-  left: 52.2%;
-  bottom: -425px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.sweat-4 img{
-  width:231px;
-  margin-left: 72%;
-  position: absolute;
-  bottom: -356px;
-}
-
-.sweat-info4{
-  line-height: 25px;
-  position: absolute;
-  left: 72%;
-  bottom: -425px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-h4{
-  margin-left: 12%;
-  margin-top: 5%;
-  color: #fff;
-  font-size: 30px;
-}
-
-.bonnet-1 img{
-  width:231px;
-  margin-left: 12%;
-  position: absolute;
-  bottom: -780px;
-}
-
-.bonnet-info1{
-  line-height: 25px;
-  position: absolute;
-  left: 12%;
-  bottom: -820px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.bonnet-2 img{
-  width:231px;
-  margin-left: 32%;
-  position: absolute;
-  bottom: -780px;
-}
-
-.bonnet-info2{
-  line-height: 25px;
-  position: absolute;
-  left: 32%;
-  bottom: -820px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.bonnet-3 img{
-  width:231px;
-  margin-left: 52.3%;
-  position: absolute;
-  bottom: -780px;
-}
-
-.bonnet-info3{
-  line-height: 25px;
-  position: absolute;
-  left: 52.3%;
-  bottom: -820px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-.bonnet-4 img{
-  width:231px;
-  margin-left: 72%;
-  position: absolute;
-  bottom: -780px;
-}
-
-.bonnet-info4{
-  line-height: 25px;
-  position: absolute;
-  left: 72%;
-  bottom: -820px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-h5{
-  margin-left: 12%;
-  margin-top: 18%;
-  color: #fff;
-  font-size: 30px;
-}
-
-.autres-1 img{
-  width:231px;
-  margin-left: 12%;
-  position: absolute;
-  bottom: -1170px;
-}
-
-.autres-info1 {
-  line-height: 25px;
-  position: absolute;
-  left: 12%;
-  bottom: -1210px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.autres-2 img{
-  width:231px;
-  margin-left: 32.1%;
-  position: absolute;
-  bottom: -1170px;
-}
-.autres-info2{
-  line-height: 25px;
-  position: absolute;
-  left: 32.1%;
-  bottom: -1210px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.autres-3 img{
-  width:231px;
-  margin-left: 52.5%;
-  position: absolute;
-  bottom: -1170px;
-}
-
-.autres-info3{
-  line-height: 25px;
-  position: absolute;
-  left: 52.5%;
-  bottom: -1210px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
-}
-
-.autres-4 img{
-  width:231px;
-  margin-left: 72%;
-  position: absolute;
-  bottom: -1170px;
-}
-.autres-info4{
-  line-height: 25px;
-  position: absolute;
-  left: 72%;
-  bottom: -1210px;
-  font-size: 12px;
-  background-color:#D5D5D5;
-  width: 16.05%;
+@media (max-width: 420px) {
+  .produits {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

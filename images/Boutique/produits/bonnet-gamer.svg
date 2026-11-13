@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<rect width="400" height="400" fill="#cfcfcf"/>
+<circle cx="200" cy="82" r="28" fill="#3d3d3d" stroke="#111" stroke-width="4"/>
+<path d="M95 270 Q90 100 200 100 Q310 100 305 270 Z" fill="#2b2b2b" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
+<path d="M140 265 Q140 130 175 104 M200 265 L200 100 M260 265 Q260 130 225 104" fill="none" stroke="#111" stroke-width="3" opacity=".5"/>
+<rect x="82" y="255" width="236" height="70" rx="14" fill="#3d3d3d" stroke="#111" stroke-width="4"/><text x="200" y="300" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="24" text-anchor="middle" fill="#e8e8e8">GAMER</text>
+</svg>
