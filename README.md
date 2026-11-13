@@ -79,16 +79,17 @@ puis rendez-vous sur <http://localhost:8000>.
 ```
 GeStore/
 ├── index.html            Page d'accueil
-├── boutique.html         Boutique de produits dérivés
-├── panier.html           Panier
-├── paiment.html          Paiement
-├── validation.html       Confirmation de commande
-├── connexion.html        Connexion
-├── inscription.html      Inscription
-├── contact.html          Contact et FAQ
-├── steam.html, ps4.html… Une page par plateforme
-├── action.html, solo.html… Une page par genre
-├── gta5.html, fifa20.html… Une page par jeu
+├── pages/
+│   ├── boutique.html     Boutique de produits dérivés
+│   ├── panier.html       Panier
+│   ├── paiment.html      Paiement
+│   ├── validation.html   Confirmation de commande
+│   ├── connexion.html    Connexion
+│   ├── inscription.html  Inscription
+│   ├── contact.html      Contact et FAQ
+│   ├── plateformes/      Une page par plateforme (steam.html, ps4.html…)
+│   ├── genres/           Une page par genre (action.html, solo.html…)
+│   └── jeux/             Une page par jeu (gta5.html, fifa20.html…)
 ├── css/
 │   ├── style.css         Accueil
 │   ├── boutique.css      Boutique
