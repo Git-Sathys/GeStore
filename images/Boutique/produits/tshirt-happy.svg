@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+<rect width="400" height="400" fill="#cfcfcf"/>
+<path d="M140 70 L95 88 L40 140 L78 185 L110 160 L110 340 L290 340 L290 160 L322 185 L360 140 L305 88 L260 70 Q200 112 140 70 Z" fill="#e9c46a" stroke="#b08d3a" stroke-width="4" stroke-linejoin="round"/>
+<path d="M140 70 Q200 112 260 70" fill="none" stroke="#b08d3a" stroke-width="10" stroke-linecap="round"/><text x="200" y="185" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="17" text-anchor="middle" fill="#3a2c05">PLAY</text>
+<text x="200" y="206.25" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="17" text-anchor="middle" fill="#3a2c05">VIDEO GAMES</text>
+<text x="200" y="227.5" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="17" text-anchor="middle" fill="#3a2c05">AND BE HAPPY</text><circle cx="200" cy="285" r="26" fill="none" stroke="#3a2c05" stroke-width="5"/><circle cx="191" cy="278" r="4" fill="#3a2c05"/><circle cx="209" cy="278" r="4" fill="#3a2c05"/><path d="M187 290 Q200 303 213 290" fill="none" stroke="#3a2c05" stroke-width="4" stroke-linecap="round"/>
+</svg>
